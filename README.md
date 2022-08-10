@@ -114,7 +114,7 @@ Multinomial Naïve Bayes consider a feature vector where a given term represents
 #### Then I have tried with different algorithms like Logistic Regression, Decsion Tree, Random Forest Classiifier, ADABOOST, XG-BOOST, KNeighbours Classifier. After that I got the accuracy and precision as follows and among them Multinomial Naive Bayes Classifier performing best:
 ![image](https://user-images.githubusercontent.com/104545490/183989729-5a26cd2f-88a3-4941-b609-4ac99be0d1ab.png)
 
-## COnclusion : 
+## Conclusion : 
 ### This is how I have created the EMAIL/SMS Spam Classifier model by using the machine learning algorithm of Naive Bayes Classifier. 
 
 
