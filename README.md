@@ -20,7 +20,7 @@
 ### The dataset contains the two columns:
 - TEXT (input)
 - Target (output: 1. Spam 2. Not Spam)
-- Shape of dataset is (5572,2)
+- Shape of dataset is (5572 , 2)
 
 ## The Model is built by using following steps :
 - Data cleaning
@@ -55,6 +55,64 @@ Now shape of the dataset becomes (5169,2) after dropping all duplicate rows
 - I have created the Histplot to see how number of characters and number of words distrbuted in input
 ![image](https://user-images.githubusercontent.com/104545490/183976970-489aa10a-204d-4f4a-bc86-bb1d5e68c847.png)
 ![image](https://user-images.githubusercontent.com/104545490/183977041-31aa4426-533d-4c2f-9364-7bea6f508d56.png)
+
+- The I checked how number of characters, number of words and number of sentences are correlated by using seaborn library
+![image](https://user-images.githubusercontent.com/104545490/183978617-707c0052-95b8-4c6a-a5af-d4bc29fee614.png)
+![image](https://user-images.githubusercontent.com/104545490/183978741-de0a5062-a77e-41f5-aa47-eb222e17aabf.png)
+
+### 3. Data Preprocessing:
+- Lower case
+- Tokenization
+- Removing special characters
+- Removing stop words and punctuation
+- Stemming
+#### 1. Lower case: 
+I have converted all the words into lower words to not to repeat the words and characters as both meaning is same
+
+#### 2. Tokenization:
+Tokenization is the preocess of converting paragraph into list of sentences and sentences into list of words and I converted text data into list of words for every sample row
+
+#### 3. Removing special characters:
+The special characters like '!','%','*','$' are removed from sentences
+
+#### 4. Removing Stop words:
+The words like 'The', 'is', 'am', 'it' are removed because it does no meaning and does not affects on output
+
+#### 5. Stemming:
+Stemming is process of finding the root words of the all words in the text data. For eg. 'calling', 'called' have root word 'call' and 'gone', 'goes' have root word 'go'
+#### 6. I have created the wordcloud chart which shows most frequently words when EMAIL or SMS is spam and ham
+##### For Spam
+![image](https://user-images.githubusercontent.com/104545490/183982163-7a80fda0-0835-4d66-b7f3-7e81483f9f4b.png)
+##### For ham
+![image](https://user-images.githubusercontent.com/104545490/183982231-59fc96bc-465b-4bcb-9c22-7105764a15be.png)
+
+#### 7. Our final datastet will be:
+![image](https://user-images.githubusercontent.com/104545490/183982961-f8759d87-a656-449e-922b-844d92d38091.png)
+
+#### 8. Using TFIDF(term frequency-inverse document frequency) I have converted the text input into vectors after that we wiil get the as many columns as we have unique words in the input dataset
+![image](https://user-images.githubusercontent.com/104545490/183986288-9a7636a9-b0c5-4e4c-9677-49c19d4fd859.png)
+
+The shape of dataset after preprocessing becomes
+![image](https://user-images.githubusercontent.com/104545490/183986460-2ce30c77-8900-4d7a-88fb-46e56b77f059.png)
+
+
+### 4. Model Building:
+
+##### As our problem is of text classification so the algorithm called Naive Bayes Classifier works very well on this type of data. i.e. Text Data 
+#### Naive Bayes Classifier have 3 types :
+- Multinomial Naive Bayes :
+Multinomial Naïve Bayes consider a feature vector where a given term represents the number of times it appears or very often i.e. frequency. Multinomial Naive Bayes - Widely used classifier for document classification which keeps the count of frequent words present in the documents.
+
+- Bernoulli Naive Bayes : Bernoulli is a binary algorithm used when the feature is present or not. 
+
+- Guassian Naive Bayes : Gaussian is based on continuous distribution i.e. Used when we are dealing with continuous data.
+
+#### I have calculated the accuracy, confusion matrix and precision score of each of three classifiers
+![image](https://user-images.githubusercontent.com/104545490/183988425-13dfd954-1cc8-4075-9bfb-a6ba9f7f9657.png)
+
+#### From three I have got the good accuracy and prescision of Multinomial Naive Bayes which is 97.1 % and precision is 100 % which is best for our model.
+#### Then I have tried with different algorithms like Logistic Regression, Decsion Tree, Random Forest Classiifier, ADABOOST, XG-BOOST, KNeighbours Classifier. After that I got the accuracy and precision as follows and among them Multinomial Naive Bayes Classifier performing best:
+![image](https://user-images.githubusercontent.com/104545490/183989729-5a26cd2f-88a3-4941-b609-4ac99be0d1ab.png)
 
 
 
