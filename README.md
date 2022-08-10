@@ -96,7 +96,7 @@ The shape of dataset after preprocessing becomes
 ![image](https://user-images.githubusercontent.com/104545490/183986460-2ce30c77-8900-4d7a-88fb-46e56b77f059.png)
 
 
-### 4. Model Building:
+### 4. Model Building and Evaluation :
 
 ##### As our problem is of text classification so the algorithm called Naive Bayes Classifier works very well on this type of data. i.e. Text Data 
 #### Naive Bayes Classifier have 3 types :
@@ -113,6 +113,9 @@ Multinomial Naïve Bayes consider a feature vector where a given term represents
 #### From three I have got the good accuracy and prescision of Multinomial Naive Bayes which is 97.1 % and precision is 100 % which is best for our model.
 #### Then I have tried with different algorithms like Logistic Regression, Decsion Tree, Random Forest Classiifier, ADABOOST, XG-BOOST, KNeighbours Classifier. After that I got the accuracy and precision as follows and among them Multinomial Naive Bayes Classifier performing best:
 ![image](https://user-images.githubusercontent.com/104545490/183989729-5a26cd2f-88a3-4941-b609-4ac99be0d1ab.png)
+
+## COnclusion : 
+### This is how I have created the EMAIL/SMS Spam Classifier model by using the machine learning algorithm of Naive Bayes Classifier. 
 
 
 
