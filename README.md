@@ -115,6 +115,10 @@ Multinomial Naïve Bayes consider a feature vector where a given term represents
 ![image](https://user-images.githubusercontent.com/104545490/183989729-5a26cd2f-88a3-4941-b609-4ac99be0d1ab.png)
 
 #### Lets see demo of model or test the model:
+
+## Website Link:
+https://shiv-spam-detector.herokuapp.com/
+
  Testing 1
 ![image](https://user-images.githubusercontent.com/104545490/184197792-a48bee6d-7f64-4abb-a5c9-aee8c53f4f76.png)
  
@@ -126,6 +130,11 @@ Multinomial Naïve Bayes consider a feature vector where a given term represents
 ### This is how I have created the EMAIL/SMS Spam Classifier model by using the machine learning algorithm of Naive Bayes Classifier. 
 
 
+Project By - Shivsharan Malage
+
+[Github](https://github.com/Shivmalge)
+
+[Linkedin](https://www.linkedin.com/in/shivsharan-malage-99802a230/)
 
 
 
