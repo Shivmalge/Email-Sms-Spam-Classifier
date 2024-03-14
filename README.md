@@ -1,6 +1,6 @@
 # Email-Sms-Spam-Classifier
 ##### https://shiv-spam-detector.herokuapp.com/
-(The link was deployed on Heruku and the screenshots of below Testing1 and Testing2 are previous when website deployed but the Heruku has restricted platform and added subscription so link is not accessible now. )
+(The link was deployed on Heruku but the Heruku has restricted platform and added subscription so link is not accessible now. )
 ## Objective : Prediction of Spam Email or SMS using Machine Learning
 
 ## Introduction : 
