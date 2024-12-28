@@ -1,6 +1,5 @@
 # Email-Sms-Spam-Classifier
 ##### https://email-sms-spam-classifier-hzlsqvj8kvnjliwg8fbfdq.streamlit.app/
-(The link was deployed on Heruku but the Heruku has restricted platform and added subscription so link is not accessible now. )
 ## Objective : Prediction of Spam Email or SMS using Machine Learning
 
 ## Introduction : 
@@ -118,8 +117,7 @@ Multinomial Naïve Bayes consider a feature vector where a given term represents
 #### Lets see demo of model or test the model:
 
 ## Website Link:
-https://shiv-spam-detector.herokuapp.com/
-(The link was deployed on Heruku and the screenshots of below Testing1 and Testing2 are previous when website deployed but the Heruku has restricted platform and added subscription so link is not accessible now. )
+#### https://email-sms-spam-classifier-hzlsqvj8kvnjliwg8fbfdq.streamlit.app/
 
  Testing 1
 ![image](https://user-images.githubusercontent.com/104545490/184197792-a48bee6d-7f64-4abb-a5c9-aee8c53f4f76.png)
